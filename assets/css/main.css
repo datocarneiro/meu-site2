@@ -40,10 +40,20 @@
   --contrast-color: #ffffff;
 }
 
+.bi-whatsapp {
+  color: #25D366;
+}
+
+
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
 }
+
+/*--------------------------------------------------------------
+# CLASSSES QUE EU CRIEI
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -53,6 +63,8 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
+
+
 
 a {
   color: var(--accent-color);
@@ -549,7 +561,7 @@ section,
   position: absolute;
   border-radius: 50%;
   background: linear-gradient(45deg, color-mix(in srgb, var(--accent-color), transparent 90%), color-mix(in srgb, var(--accent-color), transparent 95%));
-  animation: float 6s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
 .hero .background-elements .bg-circle.circle-1 {
@@ -994,7 +1006,7 @@ section,
 
 .about .stats-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 2.5rem;
   padding: 2rem;
