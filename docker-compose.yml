@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  php_portifolio:
+    image: php:8.2-fpm
+    container_name: php-fpm-portifolio
+    restart: always
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    networks:
+      - site-net
+
+networks:
+  site-net:
+    driver: bridge
